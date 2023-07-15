@@ -14,5 +14,6 @@ Wie bereits erwähnt erfolgt die Übergabe in dem Format: YYYY-MM-DD
 - DD: Tag in zweistelliger Form (Bsp.: 01, 06, 12, 23, 30)
  
 ## Kompilation 
-Das Programm kann einfach mit einem beliebigen Compiler kompiliert werden. Ich habe dafür clang verwendet.
-Beispiel: `clang main.c -o main.elf`
+Das Programm kann einfach mit einem beliebigen Compiler kompiliert werden. Ich habe dafür gcc verwendet. Es muss allerdings die verlinkung für die library math.h hinzugefügt werden.
+
+Beispiel: `gcc main.c -o main.elf -lm`
