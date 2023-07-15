@@ -5,6 +5,8 @@ Die Datei main_1.c enthält die Teilaufgabe 1 mit dem Definitionsbereich YYYY-MM
 
 Die Datei main_2.c enthält die Teilaufgabe 2 mit dem erweiterten Definitonsbereich von 1900-01-01 < YYYY-MM-DD < heute.
 
+Zur Hilfe der [Berechnung der Wochentage wurde der Algorithmus](https://de.wikipedia.org/wiki/Wochentagsberechnung#Programmierung) von [Christian Zeller](https://de.wikipedia.org/wiki/Christian_Zeller_(Mathematiker)) aus dem Jahre 1882 verwendet.
+
 ## Format der Übergabe 
 Wie bereits erwähnt erfolgt die Übergabe in dem Format: YYYY-MM-DD
 - YYYY: Jahr in vierstelliger Form (Bsp.: 2023)
