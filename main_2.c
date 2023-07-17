@@ -72,6 +72,17 @@ void berechnung_jahres_stellen ( int jahr_stellen , int monat_stellen , int *ste
 	}
 }
 
+int berechnung_monat_julianisch ( int monat_gregorianisch )
+{
+	if ( monat_gregorianisch == 1 || monat_gregorianisch == 2 )
+	{
+		return monat_gregorianisch + 10 ;
+	}
+	else 
+	{
+		return monat_gregorianisch - 2 ;
+	}
+}
 int berechnung_wochentagszahl ( int tag_tagzahl , int monat_julianisch_tagzahl , int stelle_1_2_jahr_tagzahl , int stelle_3_4_jahr_tagzahl)
 {
 	int wochentagzahl ;
@@ -147,12 +158,12 @@ int main ( int argc , char *argv[] )
 	if ( case_erfuellt == 1 )
 	{
 		zuweisung_daten ( datum , jahr_pointer , monat_pointer , tag_pointer ) ;
-		
+
 		if ( jahr >= 1900 )
 		{
 			berechnung_jahres_stellen ( jahr , monat , stelle_1_2_jahr_pointer , stelle_3_4_jahr_pointer ) ;
-
-			monat_julianisch = abs ( monat - 2 ) ;
+		
+			monat_julianisch = berechnung_monat_julianisch ( monat ) ;
 
 			nummer_wochentag = berechnung_wochentagszahl ( tag , monat_julianisch , stelle_1_2_jahr , stelle_3_4_jahr ) ;
 				
@@ -162,9 +173,10 @@ int main ( int argc , char *argv[] )
 		}
 
 		else
-		{ 
-			printf ( "Das Datum befindet sich außerhalb des Definitonsbreiches. Bitte ein Datum ab 1900-01-01 eingeben.\n" ) ;
+		{
+			printf ( "Das Datum liegt außerhalb des Definitonsbereiches. Bitte ein Datum > 1900-01-01 eingeben.\n" ) ;
 		}
+
 	}
 
 	return 0 ;
