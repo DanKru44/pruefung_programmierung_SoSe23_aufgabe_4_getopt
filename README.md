@@ -3,7 +3,9 @@ In diesem Repo befindet sich das Programm das zur Lösung der Aufgabe 4 der Ausa
 
 Die Datei main_1.c enthält die Teilaufgabe 1 mit dem Definitionsbereich YYYY-MM-DD > 2024-01-01.
 
-Die Datei main_2.c enthält die Teilaufgabe 2 mit dem erweiterten Definitonsbereich von 1900-01-01 < YYYY-MM-DD < heute.
+Die Datei main_2.c enthält die Teilaufgabe 2 mit dem erweiterten Definitonsbereich von 1900-01-01 < YYYY-MM-DD < heute. Für das heutige Datum wurde 2023-12-12 festgelegt, da heute natürlich abhängig vom Tag des betrachtens ist und somit das restliche jahr abbgebildet wird. 
+
+Die Datei main_3.c enthält das Programm mit dem Definitonsbereich erweitert bis zum 0000-01-01. Dieses Programm wurde erstellt um die Funktion zum berechnen und später in der Teilaufgaben zu verwenden. 
 
 Zur Hilfe der [Berechnung der Wochentage wurde der Algorithmus](https://de.wikipedia.org/wiki/Wochentagsberechnung#Programmierung) von [Christian Zeller](https://de.wikipedia.org/wiki/Christian_Zeller_(Mathematiker)) aus dem Jahre 1882 verwendet.
 
@@ -16,4 +18,4 @@ Wie bereits erwähnt erfolgt die Übergabe in dem Format: YYYY-MM-DD
 ## Kompilation 
 Das Programm kann einfach mit einem beliebigen Compiler kompiliert werden. Ich habe dafür gcc verwendet. Es muss allerdings die verlinkung für die library math.h hinzugefügt werden.
 
-Beispiel: `gcc main.c -o main.elf -lm`
+Beispiel: `gcc main_1.c -o main_1.elf -lm`
