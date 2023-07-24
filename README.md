@@ -24,7 +24,7 @@ gcc main_1.c -o main_1.elf -lm
 ```
 
 ## Ausführung 
-Um das Programm auszuführen muss der Befehl zum ausführen des Programms eingegeben werden. Zusätzlich muss die Option -d und ein Jahr im oben erwähnten Format übergeben werden.
+Um das Programm auszuführen muss der Befehl zum ausführen des Programms eingegeben werden. Zusätzlich muss die Option -d und ein Datum im oben erwähnten Format übergeben werden.
 
 Beispiel für Ubunt/WSL:
 ```
