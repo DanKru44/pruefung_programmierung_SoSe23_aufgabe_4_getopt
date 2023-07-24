@@ -28,5 +28,5 @@ Um das Programm auszuführen muss der Befehl zum ausführen des Programms eingeg
 
 Beispiel für Ubunt/WSL:
 ```
-./main.elf -d 2023-08-16 
+./main_1.elf -d 2023-08-16 
 ```
